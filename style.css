@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.container {
+    display: flex;
+}
+
+.tam-fonte {
+    font-size: 22px;
+}
+
+.branco {
+    color: #fff;
+}
+
+.laranja {
+    color: #f36f3b;
+}
+
+.bege {
+    color: #fadcd8;
+}
+
+.rosa {
+    color: #FCB1B1;
+}
+
+.marrom {
+    color: #d47035;
+}
+
+.marrom-escuro {
+    color: #824321;
+}
+
+/* cabeçalho */
+
+header {
+    width: 100%;
+    -position: fixed;
+    z-index: 2;
+}
+
+.faixa {
+    width: 100%;
+    height: 24px;
+    background-color: #d47035;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.link-faixa {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-faixa:hover {
+    text-decoration: underline;
+}
+
+.header {
+    font-size: 18px;
+    background-color: #fff;
+    padding: 8px; 
+    color: #000; 
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    padding-left: 20px;
+}
+
+.icone {
+    width: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    font-size: 17px;
+    color: #000;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+}
+
+ul a:hover {
+    color: #fff;
+    background-color: #9cc4bc;
+    border-radius: 20px;
+}
+
+.menu-mobile {
+    display: none; 
+}
+
+.hamburguer-menu {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+}
+
+
+/* corpo */
+
+.img-fundo {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.servicos {
+    height: 580px;
+}
+
+.titulo-secao {
+    font-size: 50px;
+}
+
+.titulo-left {
+    padding-left: 175px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.img-servico {
+    width: 40%;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.img-servico:hover {
+    border: 4px solid #d47035;
+}
+
+.localizacao {
+    height: 450px;
+    background-color: #b7a137;
+}
+
+.container-loc {
+    display: flex;
+    align-items: center; 
+}
+
+.imagem-icon {
+    width: 40px;
+    padding-right: 25px; 
+}
+
+.padding-loc {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 60px;
+}
+
+.mapa {
+    padding-right: 50px;
+}
+
+.sobre {
+    height: 700px;
+    background-color: #fff;
+}
+
+.texto-sobre {
+    margin: 0px 120px 90px 120px;
+    text-align: center;
+}
+
+.img-sobre {
+    width: 400px;
+    padding-top: 130px;
+    padding-right: 100px;
+}
+
+.titulo-center {
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.tape {
+    width: 200px;
+    top: 120px;
+    transform: translate(50%, -50%);
+    z-index: 1;
+    position: absolute;
+    opacity: 70%;
+}
+
+.espaco-tape {
+    position: relative;
+}
+
+.contato {
+    height: 400px;
+    background-color: #9cc4bc;
+}
+
+form {
+    max-width: 300px;
+    margin: 20px auto;
+    color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.button-contato {
+    background-color: #b7a137;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4ba39;
+}
+
+.margem {
+    padding-top: 40px;
+}
+
+
+/* rodapé */
+
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #d47035;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 40%;
+    margin: 8px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    color: #fff;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.footer-bottom {
+    background-color: #fff;
+    color: #d47035;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* resposividade */
+
+@media only screen and (max-width: 1075px) {
+
+    .servicos {
+        height: 420px;
+    }
+
+    .titulo-left {
+        font-size: 160%;
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+
+    .titulo-secao {
+        font-size: 50px;
+    }
+    
+    .localizacao {
+        height: 700px;
+    }
+
+    .localizacao .container {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 400px;
+        padding: 0;
+    }
+
+    .padding-loc {
+        padding: 20px;
+    }
+
+    .sobre .container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre {
+        height: auto; 
+    }
+
+    .tape {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+   
+    .sobre {
+        height: 1350px;
+    }
+
+    .img-sobre {
+        width: 40%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tape {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .img-fundo { 
+        content: url('img/fundomobile.png'); 
+    }
+
+    .img-sobre {
+        width: 50%; 
+        padding-right: 100px;
+    }
+
+    .sobre {
+        height: 1210px;
+    }
+
+    .texto-sobre {
+        margin: 0px 40px 90px 40px;
+        text-align: center;
+    }
+
+    .servicos {
+        height: 700px;
+    }
+
+    .img-servico {
+        width: 80%;
+        height: auto;
+    }
+    
+    .tape {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    .faixa {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 70px;
+        padding-left: 10px;
+    }
+
+    .icone {
+        width: 19px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    
+    .img-fundo { 
+        content: url('img/fundomobile.png'); 
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .titulo-secao {
+        font-size: 150%;
+    }
+
+    .servicos {
+        height: 500px;
+    }
+
+    .img-servico {
+        width: 80%;
+        height: auto;
+    }
+
+    .titulo-left {
+        font-size: 160%;
+        padding-top: 50px;
+        padding-left: 40px;
+    }
+    
+    .localizacao {
+        height: 700px;
+    }
+
+    .localizacao .container {
+        flex-direction: column-reverse;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 400px;
+        padding: 0;
+    }
+
+    .padding-loc {
+        padding: 20px;
+    }
+
+    .sobre .container {
+        flex-direction: column-reverse;
+    }
+
+    .sobre {
+        height: auto; 
+    }
+
+    .container {
+        flex-direction: column; 
+    }
+
+    .right {
+        width: 100%; 
+    }
+
+    .img-sobre {
+        width: 100%; 
+        padding: 20px 0; 
+    }
+
+    .texto-sobre {
+        margin: 20px; 
+    }
+
+    .titulo-center {
+        padding-top: 40px; 
+        padding-bottom: 20px;
+    }
+
+    .tape {
+        display: none;
+    }
+
+    .footer-section {
+        width: 100%; 
+    }
+
+    .tam-fonte {
+        font-size: 16px;
+        margin: 0 40px 40px 40px;
+    }
+    
+    form {
+        max-width: 250px;
+        margin: 20px auto;
+        color: #fff;
+    }
+    
+    .imagem-icon {
+        width: 40px;
+        padding-right: 15px; 
+    }
+    
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logotrans.png" type="image/x-icon">
+    <title>Cadastro - Patas & Pelos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            height: 100vh;
+            background-color: #FCB1B1;
+        }
+
+        .caixa {
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            width: 100%;
+            -position: fixed;
+            z-index: 2;
+        }
+
+        .faixa {
+            width: 100%;
+            height: 24px;
+            background-color: #d47035;
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+        }
+
+        .link-faixa {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .link-faixa:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            font-size: 18px;
+            background-color: #fff;
+            padding: 8px; 
+            color: #000; 
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-header {
+            width: 90px;
+            padding-left: 20px;
+        }
+
+        .icone {
+            width: 25px;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            font-size: 17px;
+            color: #000;
+            text-decoration: none;
+            padding: 14px;
+            display: block;
+        }
+
+        ul a:hover {
+            color: #fff;
+            background-color: #9cc4bc;
+            border-radius: 20px;
+        }
+
+        .logo {
+            width: 200px;
+            padding-left: 150px;
+            margin: 50px;
+        }
+
+        .container {
+            width: 600px;
+            padding: 20px;
+            border-radius: 30px;
+            background-color: #fff;
+            margin: 30px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 10px 0 10px 0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-style: none;
+            background-color: #b8b8b8;
+        }
+
+        select {
+            padding: 8px;
+            margin: 10px 0 10px 0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            border-style: none;
+            background-color: #b8b8b8;
+        }
+
+        button {
+            font-size: 15px;
+            padding: 10px;
+            background-color: #b7a137;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d4ba39;
+        }
+
+        .link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-mobile {
+    display: none; 
+    }
+
+    .hamburguer-menu {
+    cursor: pointer;
+    padding: 10px;
+    }
+
+    .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+    }
+
+/* resposividade */
+
+@media (max-width: 730px) {
+
+.menu {
+    display: none;
+}
+
+.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    width: 80%;
+}
+
+.container {
+    width: 60%;
+}
+
+.logo {
+    width: 100px;
+    padding-left: 1px;
+    margin: 50px;
+}
+
+label, input, select {
+    font-size: 12px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+}
+
+.form h2 {
+    font-size: 100%;
+}
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="faixa">
+            <p> NOS SIGA NO INSTA <a class="link-faixa" href="">@POUSADA_PATASEPELOS</a></p>
+        </div>
+
+        <div class="header">
+
+                <a href="index.html"><img class="logo-header" src="img/logo.png" alt="Logo da Empresa"></a>
+            
+            <ul class="menu">
+                <li><a href="index.html#home">Home</a></li>             
+                <li><a href="index.html#servicos">Serviços</a></li>  
+                <li><a href="index.html#localizacao">Localização</a></li>
+                <li><a href="index.html#sobre">Sobre Nós</a></li>
+                <li><a href="index.html#newsletter">Newsletter</a></li>
+            </ul>
+            
+            <div>
+                <a href=""><img class="icone" src="img/instagram_3661391.png" ></a>
+                <a href="login.html"><img class="icone" src="img/user.png" ></a>
+            </div>
+
+            <div class="menu-mobile">
+                <div class="hamburguer-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+        
+                <ul class="menu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#localizacao">Localização</a></li>
+                    <li><a href="index.html#sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#newsletter">Newsletter</a></li>
+                </ul>
+            </div>    
+
+        </div>  
+                
+    </header>
+    
+    <div class="caixa">
+
+        <div class="container">
+
+            <div>
+                <img class="logo" src="img/logo.png" alt="">
+            </div>
+
+            <form class="form">
+                <h2>Cadastro</h2>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="nasc">Data de Nascimento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <label for="petName">Nome do Pet:</label>
+                <input type="text" id="petName" name="petName" required>
+                <label for="petType">Tipo de Pet:</label>
+                <select id="petType" name="petType" required>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="coelho">Coelho</option>
+                    <option value="passaro">Pássaro</option>
+                </select>            
+                <label for="nasc">Data de Nascimento do Pet:</label>
+                <input type="date" id="petBirthdate" name="petBirthdate" required>
+                <label for="petBreed">Raça do Pet:</label>
+                <input type="text" id="petBreed" name="petBreed" required>
+                <button type="submit">Cadastrar</button>
+                <p class="link">Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
